@@ -176,3 +176,12 @@ footer {
     margin-left: 10px;
     fill: currentColor;
 }
+
+@media screen and (min-width: 480px) {
+    .form {
+        flex-direction: column;
+    }
+    .footer-wrap {
+        flex-direction: column;
+    }
+}
