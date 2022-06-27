@@ -1,0 +1,25 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+}
+
+section {
+    & h2 {
+        color: $title-text-color;
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}

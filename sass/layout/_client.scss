@@ -1,0 +1,36 @@
+/* client */
+
+.client {
+    padding-top: $padding-section;
+    padding-bottom: $padding-section;
+    background: white;
+    .client-list {
+        display: flex;
+    }
+}
+
+.client__list-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.client__list-link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $social-link-fill;
+    border-radius: 4px;
+    fill: $social-link-fill;
+    transition: $transition-fill, $transition-border;
+    &:hover {
+		border-color: $accent-color;
+		fill: $accent-color;
+	}
+	&:focus {
+		border-color: $accent-color;
+		fill: $accent-color;
+	}
+}
