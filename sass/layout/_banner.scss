@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/banner.jpg");
+        url("../images/banner.jpg");
     text-align: center;
     .banner__title {
         font-weight: 900;
@@ -19,6 +19,14 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $light-color;
+        @media screen and (min-width: 480px) {
+            font-size: 26px;
+            line-height: 1.62;
+        }
+    }
+    @media screen and (min-width: 480px) {
+        padding-top: 118px;
+        padding-bottom: 198px;
     }
 }
 
@@ -44,10 +52,3 @@
         background: #188ce8;
     }
 }
-
-@media screen and (min-width: 380px) {
-    .banner .banner__title{
-        font-size: 26px;
-    }
-}
-

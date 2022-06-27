@@ -3,6 +3,12 @@
 .about {
     padding-top: $padding-section;
     padding-bottom: $padding-section;
+    @include mobile {
+        display: none;
+    }
+    @include desktop {
+        display: block;
+    }
 }
 
 .about-title {
@@ -35,11 +41,5 @@
     position: relative;
     &:not(:last-child) {
         margin-right: 30px;
-    }
-}
-
-@media screen and (min-width: 380px) {
-    .about {
-        display: none;
     }
 }
