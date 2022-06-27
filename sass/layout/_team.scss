@@ -22,9 +22,9 @@
 }
 
 .team__list-item {
-    &:not(:last-child) {
-        margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //     margin-right: 30px;
+    // }
 }
 
 .team-wrap {
@@ -46,4 +46,17 @@
     letter-spacing: 0.03em;
     color: $primary-color;
     margin-top: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team__list-item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }

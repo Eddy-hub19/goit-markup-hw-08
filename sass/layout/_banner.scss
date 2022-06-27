@@ -44,3 +44,10 @@
         background: #188ce8;
     }
 }
+
+@media screen and (min-width: 480px) {
+    .banner .banner__title{
+        font-size: 26px;
+    }
+}
+

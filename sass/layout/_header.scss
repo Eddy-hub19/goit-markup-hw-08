@@ -94,3 +94,14 @@
 .header__link-icon {
     margin-right: 10px;
 }
+
+@media screen and (min-width: 480px) {
+    .header {
+        .header__nav {
+            display: none;
+        }
+        .header__links{
+            display: none;
+        }
+    }
+}
