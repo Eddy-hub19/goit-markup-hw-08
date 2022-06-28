@@ -110,3 +110,10 @@
         }
     }
 }
+@include desktop {
+    .header {
+        .header__links {
+            display: flex;
+        }
+    }
+}

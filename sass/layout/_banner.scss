@@ -3,8 +3,8 @@
 .banner {
     max-width: 1600px;
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 198px;
     background-color: $primary-bg-color;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,21 +12,21 @@
         url("../images/banner.jpg");
     text-align: center;
     .banner__title {
+        font-size: 26px;
+        line-height: 1.62;
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: $light-color;
-        @media screen and (min-width: 480px) {
-            font-size: 26px;
-            line-height: 1.62;
+        @include desktop {
+            font-size: 44px;
+            line-height: 1.36;
         }
     }
-    @media screen and (min-width: 480px) {
-        padding-top: 118px;
-        padding-bottom: 198px;
+    @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
 }
 

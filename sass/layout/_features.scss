@@ -20,20 +20,13 @@
 }
 
 .features__list-item {
-    // display: flex;
-    // flex-wrap: wrap;
-    // width: 270px;
-    // text-align: left;
-    // &:not(:last-child) {
-    // 	margin-right: 30px;
-    // }
-    @include mobile {
-        text-align: center;    
-    }
+    text-align: center;
     @include tablet {
-        width: calc((100% - 30px) / 2);    
+        width: calc((100% - 30px) / 2);
     }
-    
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 .features__list-descr {

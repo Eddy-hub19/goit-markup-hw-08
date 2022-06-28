@@ -19,6 +19,9 @@
     @include tablet {
         width: calc((100% - 180px) / 3);
     }
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
 }
 
 .client__list-link {
