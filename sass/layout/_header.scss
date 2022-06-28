@@ -2,7 +2,7 @@
 
 .header {
     border-bottom: 1px solid #ececec;
-    padding: 24px 0 24px 0;
+    padding: 16px 0;
 }
 
 .header__top {
@@ -15,7 +15,16 @@
     color: #000;
 }
 
-//  .header__nav{}
+.header__nav {
+    display: none;
+    @include tablet {
+        display: block;
+        margin-left: 88px;
+    }
+    @include desktop {
+        display: flex;
+    }
+}
 
 .header__nav-list {
     display: flex;
@@ -62,10 +71,17 @@
 }
 
 .header__links {
-    display: flex;
+    display: none;
+    
     margin-left: auto;
     li:not(:last-child) {
         margin-right: 30px;
+    }
+    @include tablet {
+        display: block;
+    }
+    @include desktop {
+        display: flex;
     }
 }
 
@@ -87,33 +103,4 @@
 
 .header__link-icon {
     margin-right: 10px;
-}
-
-@include mobile {
-    .header {
-        .header__nav {
-            display: none;
-        }
-        .header__links {
-            display: none;
-        }
-    }
-}
-
-@include tablet {
-    .header {
-        .header__nav {
-            display: block;
-        }
-        .header__links {
-            display: block;
-        }
-    }
-}
-@include desktop {
-    .header {
-        .header__links {
-            display: flex;
-        }
-    }
 }

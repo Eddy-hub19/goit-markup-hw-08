@@ -2,15 +2,21 @@
 
 .team {
     background: #f5f4fa;
-    padding-top: $padding-section;
-    padding-bottom: $padding-section;
+    padding-top: 60px;
+    padding-bottom: 60px;
     @include tablet {
         margin-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include desktop {
+        padding-top: $padding-section;
+        padding-bottom: $padding-section;
     }
 }
 
 .team-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    // margin-bottom: 50px;
 }
 
 .team-list {

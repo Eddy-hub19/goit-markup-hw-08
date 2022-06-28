@@ -7,17 +7,20 @@ footer {
 }
 
 .footer-wrap {
-    display: flex;
-    align-items: baseline;
+    // display: flex;
+    // align-items: baseline;
+    text-align: center;
 }
 
 .footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-style: normal;
 }
 
 .footer-list {
-    margin: 0;
-    padding: 0;
+    margin-top: 20px;
 }
 
 .footer__list-item {
@@ -50,7 +53,8 @@ footer {
 }
 
 .footer__soc-links {
-    margin-left: 70px;
+    // margin-left: 70px;
+    margin-top: 60px;
 }
 
 .footer__soc-title {
@@ -59,13 +63,15 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $light-color;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 
 .footer__soc-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    // justify-content: space-around;
 }
 
 .footer__soc-item {
@@ -95,7 +101,8 @@ footer {
 /* form */
 
 .footer__form-wrap {
-    margin-left: 93px;
+    margin-top: 60px;
+    // margin-left: 93px;
 }
 
 .footer__form-title {
@@ -108,17 +115,18 @@ footer {
 }
 
 .form {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: row;
 }
 
 .form__email {
-    display: flex;
+    // display: flex;
 }
 
 .form-input {
-    width: 358px;
+    width: 100%;
+    // width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -151,17 +159,16 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: $light-color;
+    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
     padding-right: 28px;
-    display: flex;
-    align-items: center;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -175,13 +182,4 @@ footer {
 .form__button-icon {
     margin-left: 10px;
     fill: currentColor;
-}
-
-@media screen and (min-width: 480px) {
-    .form {
-        flex-direction: column;
-    }
-    .footer-wrap {
-        flex-direction: column;
-    }
 }

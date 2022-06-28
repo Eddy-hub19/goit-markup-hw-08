@@ -7,11 +7,11 @@
 
 .main-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    .main-list__item &:not(:last-child) {
-        margin-right: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    gap: 8px;
+    @include tablet {
+        justify-content: center;
     }
 }
 
@@ -38,6 +38,9 @@
 .main-list__btn.current {
     background: $accent-color;
     color: white;
+    margin-right: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* store  */
@@ -51,18 +54,23 @@
 
 .section-store__list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-top: -30px;
-    margin-left: -30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include tablet {
+        justify-content: flex-start;
+    }
 }
 
 .store-item {
     display: block;
-    width: calc((100% / 3) - 30px);
     background: $light-color;
-    margin-top: 30px;
-    margin-left: 30px;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+    }
 }
 
 .store-wrapper {

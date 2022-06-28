@@ -1,14 +1,18 @@
 /* client */
 
 .client {
-    padding-top: $padding-section;
-    padding-bottom: $padding-section;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: white;
     .client-list {
         gap: 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    @include desktop {
+        padding-top: $padding-section;
+        padding-bottom: $padding-section;
     }
 }
 
