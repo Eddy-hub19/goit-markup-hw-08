@@ -7,9 +7,12 @@ footer {
 }
 
 .footer-wrap {
-    // display: flex;
-    // align-items: baseline;
     text-align: center;
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        text-align: left;
+    }
 }
 
 .footer-address {
@@ -17,6 +20,9 @@ footer {
     flex-direction: column;
     align-items: center;
     font-style: normal;
+    @include desktop {
+        align-items: flex-start;
+    }
 }
 
 .footer-list {
@@ -53,8 +59,11 @@ footer {
 }
 
 .footer__soc-links {
-    // margin-left: 70px;
     margin-top: 60px;
+    @include desktop {
+        margin-left: 70px;
+        margin-top: 0;
+    }
 }
 
 .footer__soc-title {
@@ -63,7 +72,9 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $light-color;
-    // margin-bottom: 20px;
+    @include desktop {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__soc-list {
@@ -71,7 +82,9 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    // justify-content: space-around;
+    @include desktop {
+        justify-content: space-around;
+    }
 }
 
 .footer__soc-item {
@@ -102,7 +115,10 @@ footer {
 
 .footer__form-wrap {
     margin-top: 60px;
-    // margin-left: 93px;
+    @include desktop {
+        margin-left: 93px;
+        margin-top: 0;
+    }
 }
 
 .footer__form-title {
@@ -115,18 +131,21 @@ footer {
 }
 
 .form {
-    // display: flex;
-    // align-items: center;
-    // flex-direction: row;
+    @include desktop {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 .form__email {
-    // display: flex;
+    @include desktop {
+        display: flex;
+    }
 }
 
 .form-input {
     width: 100%;
-    // width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -140,7 +159,7 @@ footer {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-    margin-right: 12px;
+    // margin-right: 12px;
     &::placeholder {
         font-weight: 400;
         font-size: 16px;
@@ -149,6 +168,9 @@ footer {
         align-items: center;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+    }
+    @include desktop {
+        width: 358px;
     }
 }
 
@@ -159,8 +181,6 @@ footer {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    // display: flex;
-    // align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: $light-color;
@@ -176,6 +196,11 @@ footer {
     &:hover,
     &:focus {
         background-color: #188ce8;
+    }
+    @include desktop {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
     }
 }
 

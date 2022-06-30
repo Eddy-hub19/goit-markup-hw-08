@@ -3,12 +3,21 @@
 .header {
     border-bottom: 1px solid #ececec;
     padding: 16px 0;
+    @include desktop {
+        padding: 24px 0;
+    }
 }
 
 .header__top {
     display: flex;
     align-items: center;
     transition: $transition-fill, $transition-color;
+    @include tablet {
+        width: 100%;
+    }
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .header__logo-text {
@@ -23,6 +32,7 @@
     }
     @include desktop {
         display: flex;
+        margin-left: 93px;
     }
 }
 
@@ -72,16 +82,19 @@
 
 .header__links {
     display: none;
-    
     margin-left: auto;
-    li:not(:last-child) {
-        margin-right: 30px;
-    }
     @include tablet {
         display: block;
+        li:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
     @include desktop {
         display: flex;
+        li:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -103,4 +116,127 @@
 
 .header__link-icon {
     margin-right: 10px;
+}
+
+// mob-menu
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
+}
+
+.menu-open-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+}
+.icon-menu {
+    display: block;
+    &:hover{
+        fill: currentColor;
+        color: $accent-color;
+    }
+    @include tablet {
+        display: none;
+    }
+}
+
+.container-mob-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.menu-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.icon-close{
+    color: black;
+    fill: currentColor;
+    outline: none;
+    &:hover{
+        color: #2196f3;
+    }
+}
+.mob-menu-list {
+    padding: 48px 40px;
+}
+.mob-menu-list-item {
+    margin-bottom: 32px;
+}
+.mob-menu-list-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47/40); // Данилко казав так можна 😉
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.current {
+    color: #2196f3;
+}
+
+.mob-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mob-menu__link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40/34);
+    letter-spacing: 0.02em;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 32px;
+    .mob-menu__link {
+        color: #2196f3;
+    }
+}
+
+.mob-menu-social-list{
+    margin-top: 64px;
+}
+
+.menu-social-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    margin-left: 10px;
+    &:not(:last-child) {
+        &::after {
+            content: "";
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+            margin-left: 10px;
+            width: auto;
+        }
+    }
 }

@@ -26,6 +26,7 @@
     }
     @include desktop {
         width: calc((100% - 90px) / 4);
+        text-align: start;
     }
 }
 

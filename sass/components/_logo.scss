@@ -10,11 +10,13 @@
     @include desktop {
         line-height: 1.19;
         font-size: 26px;
-        margin-right: 93px;
+        // margin-right: 93px;
     }
 }
 
 .-logo-footer {
     display: flex;
-    margin-bottom: 20px;
+    @include desktop {
+        margin-bottom: 0;
+    }
 }

@@ -9,6 +9,7 @@
         padding-bottom: 60px;
     }
     @include desktop {
+        margin-top: 0;
         padding-top: $padding-section;
         padding-bottom: $padding-section;
     }
