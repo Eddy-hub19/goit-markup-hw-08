@@ -2,6 +2,7 @@
 
 .team {
     background: #f5f4fa;
+    margin-top: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
     @include tablet {
@@ -17,7 +18,9 @@
 
 .team-title {
     margin-bottom: 30px;
-    // margin-bottom: 50px;
+    @include desktop {
+        margin-bottom: 50px;
+    }
 }
 
 .team-list {

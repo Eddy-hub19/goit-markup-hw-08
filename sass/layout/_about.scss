@@ -1,13 +1,14 @@
 /* about */
 
 .about {
-    padding-top: $padding-section;
-    padding-bottom: $padding-section;
+    display: none;
     @include mobile {
         display: none;
     }
     @include desktop {
         display: block;
+        padding-top: $padding-section;
+        padding-bottom: $padding-section;
     }
 }
 

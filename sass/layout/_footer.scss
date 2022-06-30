@@ -131,6 +131,11 @@ footer {
 }
 
 .form {
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     @include desktop {
         display: flex;
         align-items: center;
@@ -145,7 +150,7 @@ footer {
 }
 
 .form-input {
-    width: 100%;
+    width: 450px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -159,7 +164,7 @@ footer {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-    
+
     &::placeholder {
         font-weight: 400;
         font-size: 16px;
@@ -208,4 +213,12 @@ footer {
 .form__button-icon {
     margin-left: 10px;
     fill: currentColor;
+}
+
+.footer-wrap__top {
+    @include tablet{
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+    }
 }
