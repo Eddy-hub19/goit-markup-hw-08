@@ -530,6 +530,7 @@ a {
 /* features */
 .features {
   padding-top: 94px;
+  display: none;
 }
 
 .features__list {
@@ -1036,6 +1037,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .form-input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
