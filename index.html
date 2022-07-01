@@ -215,7 +215,22 @@
 
                     <ul class="team-list">
                         <li class="team__list-item">
-                            <img width="270" src="./images/profile1.jpg" alt="profile" />
+                            <picture>
+                                <source
+                                    srcset="./images/profile1.jpg 1x, ./profile1.jpg 2x"
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="./images/profile1.jpg 1x, ./profile1.jpg 2x"
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="./images/mobile-x2/profile1-mobile@2x.jpg.jpg 1x, ./profile1.jpg 2x"
+                                    media="(min-width: 320px)"
+                                />
+                                <img width="270" src="./images/profile1.jpg" alt="profile" />
+                            </picture>
+
                             <div class="team-wrap">
                                 <h3 class="team__list-title">Игорь Демьяненко</h3>
                                 <p class="team__list-descr" lang="en">Product Designer</p>
