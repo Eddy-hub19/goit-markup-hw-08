@@ -2,11 +2,14 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+body .no-scroll {
+    overflow-y: hidden;
+}
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
-    width: 100%;
 }
 
 section {
