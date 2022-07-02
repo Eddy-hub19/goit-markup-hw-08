@@ -11,6 +11,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url("../images/banner.jpg");
     text-align: center;
+    background-size: cover;
     .banner__title {
         font-size: 26px;
         line-height: 1.62;
@@ -34,17 +35,17 @@
     }
     @include tablet {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url('../images/hero-tablet.jpg');
+          url('../images/tablet/banner@1x-tablet.jpg');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../images/tablet/banner@1x-tablet.jpg);
+          url(../images/tablet/banner@2x-tablet.jpg);
         }
       }
       @include desktop {
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url('../images/hero.jpg');
+          url('../images/banner.jpg');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/banner@2x.jpg);
