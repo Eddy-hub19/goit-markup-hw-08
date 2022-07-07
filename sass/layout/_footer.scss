@@ -60,6 +60,9 @@ footer {
 
 .footer__soc-links {
     margin-top: 60px;
+    @include tablet {
+        margin-top: 0;
+    }
     @include desktop {
         margin-left: 70px;
         margin-top: 0;
