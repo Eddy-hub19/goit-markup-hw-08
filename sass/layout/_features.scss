@@ -1,7 +1,10 @@
 /* features */
 
 .features {
-    padding-top: $padding-section;
+    padding-top: 60px;
+    @include desktop{
+        padding-top: $padding-section;
+    }
 }
 
 .features__list {
